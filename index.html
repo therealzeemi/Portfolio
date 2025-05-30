@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style data-styles="">
+      ion-icon {
+        visibility: hidden;
+      }
+      .hydrated {
+        visibility: inherit;
+      }
+    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azeem</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./images/galaxy.png" type="image/x-icon" />
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      - scripts
+    -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo" data-page="Home">Azeem</h1>
+      <nav class="header__nav">
+        <ul class="header__nav--list">
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Home</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">About me</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Credentials</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Skills</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Portfolios</a>
+          </li>
+
+          <!-- <li class="header__nav--item">
+            <a href="#/" class="header__nav--link">Contact</a>
+          </li> -->
+        </ul>
+      </nav>
+      <div class="header__buttons">
+        <button class="header__clrbtn">
+          <ion-icon name="moon-sharp" class="header__clrbtn--icon"></ion-icon>
+        </button>
+        <div class="header__mblnav">
+          <input type="checkbox" class="header__mblnav--input" id="mblnav" />
+          <div class="header__mblnav--bg"></div>
+          <label for="mblnav" class="header__mblnav--label">
+            <div class="header__mblnav--label-icon"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="home active" data-page="home">
+        <div class="home__content">
+          <div class="my">
+            <div class="my__img">
+              <img src="images/my-image.jpg" alt="" />
+            </div>
+            <div class="my__details">
+              <p class="my__title">Designer and Developer</p>
+              <h1 class="my__name">Azeem <br />Sajid</h1>
+              <!-- <p class="my__description">I am a web develper and designer based in Pakistan</p> -->
+              <p class="my__description">
+                Hello! I'm a Frontend Developer and Graphic Designer with a drive to craft seamless
+                digital solutions. I specialize in building powerful visual identities and immersive
+                web platforms.
+              </p>
+            </div>
+            <a href="#/" class="common__link" data-page="About me">
+              <img src="images/link-icon.png" />
+            </a>
+          </div>
+          <div class="display">
+            <div class="ticker">
+              <p class="marquee">
+                <!-- <span>I use Javascript and make full stack Web Applications.</span> -->
+                <span>Building standout brands and websites that inspire.</span>
+              </p>
+              <p class="marquee marquee2">
+                <span>Building standout brands and websites that inspire.</span>
+              </p>
+            </div>
+            <div class="display__credentials block">
+              <div class="signature">
+                <img src="images/signature.png" alt="" class="signature" />
+              </div>
+              <!-- <img src="images/signature.svg" alt="" class="signature" /> -->
+              <!-- <div class="signature">
+                <?xml version="1.0" encoding="utf-8"?> -->
+              <!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <!-- <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 37.9 9.8"
+                  style="enable-background: new 0 0 37.9 9.8"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: currentColor;
+                    }
+                  </style>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M3.4,7.5C3.3,7.6,3.2,7.8,3.1,7.9C2.8,8.2,2.5,8.5,2.1,8.7C1.3,9.1,0.6,8.8,0.3,8C0.1,7.6,0,7,0,6.5
+		c0-1.2,0.2-2.3,0.8-3.3C0.9,3,1,2.8,1.1,2.7c0.2-0.2,0.5-0.2,0.7,0.1C1.6,3.3,1.4,3.7,1.3,4.2C0.9,5.1,0.7,6.1,0.7,7
+		c0,0.3,0,0.7,0.1,1c0.1,0.5,0.5,0.7,1,0.5C2,8.4,2.3,8.3,2.5,8.1C2.8,7.8,3,7.5,3.3,7.2C3.2,6.8,3.1,6.4,3,6C3,5.4,3,4.8,3.2,4.3
+		C3.2,4,3.4,3.8,3.6,3.6C3.7,3.4,4,3.4,4.2,3.5C4.5,3.6,4.5,3.8,4.6,4c0.1,0.7-0.2,1.3-0.4,2c0,0,0,0,0,0.1C3.8,6.5,3.9,7,4.1,7.5
+		c0.2,0.4,0.3,0.7,0.6,1c0.5,0.7,1.3,0.6,1.8-0.1C6.7,8,6.8,7.6,6.9,7.1C7,6.5,7.1,5.9,7.1,5.3c-0.4-0.4-0.7-0.7-1-1
+		C5.7,3.8,5.4,3.1,5.3,2.4c0-0.2,0-0.3,0-0.5c0.1-0.4,0.4-0.6,0.8-0.5c0.2,0.1,0.4,0.2,0.6,0.4C7,2.3,7.1,2.7,7.2,3.1
+		c0.1,0.3,0.1,0.7,0.2,1c0,0.3,0.1,0.7,0.1,1c0.2,0,0.4,0.1,0.7,0.1C8.6,5.2,8.8,5,9,4.6c0.2-0.4,0.4-0.8,0.6-1.1
+		c0.3-0.5,0.8-0.9,1.4-1c0.8-0.2,1.3,0.2,1.4,1c0,0.2,0,0.5,0,0.7c0,0.1-0.1,0.1-0.2,0.1c0-0.1,0-0.2,0-0.3c0-0.3,0-0.5-0.1-0.8
+		c-0.1-0.4-0.5-0.6-0.9-0.4c-0.2,0.1-0.4,0.3-0.5,0.5C10.2,3.7,10,4.2,9.8,4.7C9.6,5.4,9.4,6.2,9.4,7c0,0.2,0,0.5,0.1,0.7
+		c0.2,0.5,0.5,0.6,1,0.3c0.3-0.2,0.5-0.5,0.7-0.8c0.3-0.6,0.6-1.3,0.7-2C12,5.2,12,5.1,12,5c0-0.1,0-0.2,0.1-0.2
+		c0.1-0.3,0.3-0.4,0.5-0.3c0.2,0.1,0.3,0.2,0.2,0.5c0,0.2-0.1,0.4-0.1,0.6c-0.1,0.6-0.1,1.2-0.2,1.8c0,0.4,0,0.7,0.1,1.1
+		c0.1,0.6,0.5,0.7,0.9,0.3c0.3-0.3,0.5-0.6,0.6-0.9c0.6-1.2,1-2.5,1.2-3.9c0.1-0.4,0.1-0.9,0.2-1.3C15.4,2.3,15.2,2,15,1.7
+		c-0.2-0.3-0.4-0.7-0.3-1.1c0-0.3,0.1-0.6,0.4-0.6c0.3-0.1,0.6,0,0.7,0.3C15.9,0.6,16,0.9,16,1.1c0,0.4,0,0.9,0,1.4
+		c0.4,0.5,0.9,1.1,1.4,1.7c0.4-0.2,0.7-0.4,1.2-0.4c0.1,0.2-0.1,0.3-0.2,0.3c-0.3,0-0.6,0.1-0.8,0.3c0.1,0.2,0.2,0.3,0.3,0.5
+		c0.5,0.8,0.8,1.7,0.7,2.7c-0.1,0.6-0.2,1.2-0.6,1.7c-0.2,0.2-0.5,0.4-0.8,0.4c-0.7,0.1-1.2-0.1-1.4-0.8c-0.2-0.5-0.1-1-0.1-1.5
+		c0.2-1,0.6-2,1.2-2.8c0,0,0.1-0.1,0.1-0.1c-0.3-0.5-0.6-1-1-1.5c-0.1,0.5-0.2,0.9-0.3,1.4c-0.3,1.3-0.6,2.5-1.2,3.7
+		c-0.2,0.3-0.4,0.6-0.6,0.9c-0.6,0.6-1.3,0.4-1.6-0.3C12,8.3,12,7.9,11.9,7.4c0-0.2,0-0.4-0.1-0.5c0,0-0.1,0-0.1,0
+		c-0.1,0.1-0.2,0.3-0.3,0.4c-0.2,0.4-0.4,0.7-0.8,0.9C10.2,8.7,9.5,8.6,9.1,8C9,7.9,8.9,7.7,8.8,7.5C8.7,7,8.6,6.4,8.7,5.9
+		c0-0.2,0-0.3,0.1-0.6C8.3,5.6,7.9,5.5,7.5,5.4C7.4,5.8,7.4,6.3,7.3,6.7C7.2,7.2,7.1,7.6,6.9,8C6.8,8.2,6.7,8.5,6.5,8.7
+		C6,9.3,5.4,9.4,4.7,9.1C4.3,8.9,4,8.5,3.7,8.1C3.6,7.9,3.5,7.7,3.4,7.5z M17.1,4.8C17,4.9,16.9,5,16.9,5.1c-0.6,0.8-0.9,1.7-1,2.7
+		c0,0.3,0,0.7,0.1,1c0,0.3,0.2,0.5,0.5,0.5c0.3,0.1,0.5-0.1,0.7-0.3c0.1-0.2,0.3-0.5,0.3-0.8C17.8,7.1,17.6,6,17.1,4.8z M7.1,4.8
+		c0-0.3,0-0.5,0-0.8C7,3.5,6.9,2.9,6.7,2.4C6.6,2.2,6.5,2,6.3,1.9C6.1,1.7,5.9,1.8,5.8,2.1c0,0.1,0,0.3,0,0.4
+		c0.1,0.7,0.4,1.4,0.9,1.9C6.8,4.5,6.9,4.6,7.1,4.8z M4.1,3.8C3.7,4.1,3.6,5,3.8,6C4.2,5.4,4.4,4.2,4.1,3.8z M15.3,0.3
+		C15,0.7,15.2,1.5,15.7,2c0-0.5-0.1-0.9-0.1-1.3C15.6,0.5,15.5,0.4,15.3,0.3z"
+                    ></path>
+                    <path
+                      class="st0"
+                      d="M20.4,6.1c0,0.6,0,1.2,0.2,1.7c0.3,0.7,0.9,1,1.6,0.6C22.6,8.3,22.8,8,23,7.7c0.4-0.6,0.7-1.3,0.9-2
+		c0.1-0.5,0.1-0.9,0.2-1.4c0.1-0.4,0.3-0.8,0.6-1.1c0.2-0.2,0.4-0.4,0.6-0.5c0.3-0.2,0.7-0.1,1,0.1c0.3,0.2,0.3,0.5,0.3,0.9
+		c-0.1,0.5-0.3,1-0.6,1.4c-0.3,0.4-0.7,0.7-1.2,0.8c-0.1,0.6,0,1.1,0.2,1.6c0.3,0.8,1,1,1.7,0.6c0.5-0.2,0.7-0.7,1-1.1
+		c0.3-0.6,0.5-1.3,0.6-2c0.1-0.4,0.1-0.8,0.2-1.2c0-0.1,0.1-0.3,0.1-0.4c0.1-0.2,0.3-0.2,0.5-0.2c0.2,0.1,0.2,0.2,0.2,0.4
+		C29.2,4.4,29.1,5.2,29,6c0,0.1,0,0.3,0.1,0.4c0.2-0.1,0.2-0.3,0.2-0.4c0.2-0.7,0.3-1.4,0.5-2.1c0.1-0.5,0.4-1.1,0.7-1.5
+		c0.1-0.2,0.3-0.4,0.5-0.5c0.3-0.3,0.7-0.4,1.1-0.2c0.4,0.2,0.5,0.5,0.6,0.9c0,0.5,0,1,0,1.5c0,0.2,0,0.4,0,0.6
+		c0.3-0.1,0.3-0.2,0.4-0.4c0.2-0.4,0.5-0.8,0.7-1.2c0.1-0.2,0.3-0.4,0.5-0.5c0.2-0.1,0.4-0.2,0.6-0.2c0.4,0,0.7,0.2,0.7,0.6
+		c0,0.3,0,0.6,0,0.9c-0.1,1-0.3,1.9-0.4,2.9c-0.1,0.7-0.1,1.3-0.1,2c0,0.1,0,0.3,0.1,0.4c0.1,0.3,0.3,0.3,0.6,0.2
+		c0.3-0.1,0.5-0.4,0.6-0.6c0.4-0.6,0.6-1.3,0.8-2c0.1-0.5,0.3-1.1,0.4-1.7c0.1,0,0.1,0,0.2,0c0,0,0,0.1,0,0.1c-0.2,1-0.4,2-0.8,2.9
+		c-0.2,0.4-0.4,0.9-0.7,1.2c-0.2,0.2-0.5,0.4-0.8,0.4c-0.5,0-0.9-0.3-1-0.8c-0.1-0.4-0.1-0.8-0.1-1.1c0-1,0.2-2,0.4-3
+		c0.1-0.4,0.2-0.9,0.2-1.3c0-0.2,0-0.4,0-0.6c0-0.4-0.2-0.5-0.5-0.3c-0.2,0.2-0.4,0.4-0.6,0.6c-0.5,0.7-0.8,1.6-1.1,2.4
+		c-0.1,0.3-0.2,0.7-0.2,1c0,0.1-0.1,0.2-0.1,0.2c-0.5,0-0.7-0.2-0.6-0.7c0.1-1,0.2-2,0.3-3c0-0.4,0-0.7,0-1.1
+		c-0.1-0.5-0.4-0.6-0.8-0.3C31,2,30.8,2.3,30.7,2.6c-0.4,0.6-0.6,1.3-0.7,2c-0.3,1-0.4,2.1-0.5,3.2c0,0.3,0,0.6,0,1
+		C29.2,9,29,8.9,28.8,8.6c-0.2-0.5-0.3-1-0.4-1.5c0-0.4-0.1-0.7-0.1-1.2c-0.1,0.3-0.2,0.5-0.3,0.7c-0.2,0.5-0.4,0.9-0.7,1.3
+		c-0.3,0.4-0.7,0.6-1.2,0.7c-0.9,0.1-1.6-0.4-1.9-1.3c-0.1-0.2-0.1-0.4-0.2-0.7c-0.1,0.1-0.1,0.2-0.1,0.2c-0.2,0.5-0.4,0.9-0.8,1.3
+		c-0.3,0.3-0.7,0.6-1.1,0.7C21.2,9,20.4,8.7,20.1,8c-0.2-0.4-0.3-0.9-0.4-1.3c-0.1-1,0-2,0.5-3c0.2-0.3,0.4-0.6,0.6-0.9
+		c0.2-0.3,0.6-0.4,1-0.4c0.5,0,0.7,0.3,0.8,0.7c0.1,0.6-0.1,1.1-0.4,1.5C21.8,5.3,21.2,5.9,20.4,6.1z M20.4,5.8
+		c0.2-0.1,0.3-0.1,0.4-0.2c0.7-0.5,1.1-1.2,1.3-2c0-0.2,0-0.4,0-0.6c0-0.3-0.3-0.4-0.5-0.3c-0.2,0.1-0.3,0.2-0.4,0.4
+		c-0.2,0.3-0.3,0.6-0.4,0.9C20.6,4.6,20.5,5.2,20.4,5.8z M24.7,5.6c0.3,0,0.5-0.1,0.6-0.3c0.5-0.4,0.7-1,0.9-1.6c0-0.1,0-0.2,0-0.3
+		c0-0.2,0-0.3-0.2-0.4c-0.2-0.1-0.3,0-0.5,0.2c-0.1,0.1-0.2,0.2-0.3,0.4C25.1,4,25,4.4,24.8,4.9C24.8,5.1,24.8,5.3,24.7,5.6z"
+                    />
+                  </g>
+                </svg> 
+              </div> -->
+              <div class="block__details">
+                <p class="block__info">More about me</p>
+                <h1 class="block__title">Credentials</h1>
+              </div>
+              <a href="#/" class="common__link" data-page="Credentials">
+                <img src="images/link-icon.png" />
+              </a>
+            </div>
+            <div class="display__portfolios block">
+              <img src="images/laptop.png" alt="" class="laptop" />
+              <div class="block__details">
+                <p class="block__info">Showcase</p>
+                <h1 class="block__title">Portfolios</h1>
+              </div>
+              <a href="#/" class="common__link" data-page="Portfolios">
+                <img src="images/link-icon.png" />
+              </a>
+            </div>
+          </div>
+          <div class="download block">
+            <img src="images/cv-icon.png" alt="" class="cv" />
+            <div class="block__details">
+              <p class="block__info">my cv</p>
+              <h1 class="block__title">Download</h1>
+            </div>
+            <a href="#" class="common__link" data-download="Download">
+              <img src="images/link-icon.png" />
+            </a>
+          </div>
+          <div class="home-skills block">
+            <div class="home-skills__details">
+              <img src="images/nodejs.png" alt="" class="home-skills__details--4" />
+              <img src="images/React-icon.svg.png" alt="" class="home-skills__details--3" />
+              <img src="images/nextjs.png" alt="" class="home-skills__details--1" />
+              <img src="images/webflow.png" alt="" class="home-skills__details--2" />
+            </div>
+            <div class="block__details">
+              <p class="block__info">My Experties</p>
+              <h1 class="block__title">Specialization</h1>
+            </div>
+            <a href="#/" class="common__link" data-page="Skills">
+              <img src="images/link-icon.png" />
+            </a>
+          </div>
+          <div class="profiles block">
+            <div class="profiles__details">
+              <a href="#/" class="profiles__details--1">
+                <img src="images/fiverr.png" alt="" />
+              </a>
+            </div>
+            <div class="block__details">
+              <p class="block__info">Only On Fiverr</p>
+              <h1 class="block__title">Fiverr Profile</h1>
+            </div>
+            <a href="#/" class="common__link" data-page="home">
+              <img src="images/link-icon.png" />
+            </a>
+          </div>
+          <div class="services">
+            <div class="services__details">
+              <div class="service">Static Websites</div>
+              <div class="service">API Powered Solutions</div>
+              <div class="service">Full Stack Applications</div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/icon-1.svg" alt="" class="work__icon" />
+            <p class="work__title">Let's <br />work <span>together.</span></p>
+            <a href="#/" class="common__link" data-page="home">
+              <img src="images/link-icon.png" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="credentials" data-page="credentials">
+        <div class="credentials__details">
+          <h1 class="credentials__title">Credentials</h1>
+          <p class="credentials__info">More about me</p>
+        </div>
+        <div class="credential">
+          <h1 class="credential__title">🎓 Education</h1>
+          <div class="credential__block" credential="bs">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon>2019 - 2021
+              </h3>
+              <h1 class="credential__name">Secondary School Certificate</h1>
+              <p class="credential__detail">Govt. High School Sargodha</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="fsc">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2021 - 2023
+              </h3>
+              <h1 class="credential__name">Inter. in Computer Science</h1>
+              <p class="credential__detail">The Reader Group of Colleges, Sargodha</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="matric">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2024 - Present
+              </h3>
+              <h1 class="credential__name">Associate Degree in Commerce</h1>
+              <p class="credential__detail">Allama Iqbal Open University, Islamabad</p>
+            </div>
+          </div>
+        </div>
+        <div class="credential">
+          <h1 class="credential__title">👨‍💻 Experiences</h1>
+          <div class="credential__block" credential="bs">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon>2024 - Present
+              </h3>
+              <h1 class="credential__name">Graphics Designer</h1>
+              <p class="credential__detail strike">Working as Freelancer on Fiverr</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="fsc">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2024 - Present
+              </h3>
+              <h1 class="credential__name">Front-End Developer</h1>
+              <p class="credential__detail strike">Local Software House</p>
+            </div>
+          </div>
+          <div class="credential__block" credential="matric">
+            <div class="credential__content">
+              <h3 class="credential__date">
+                <ion-icon name="calendar-outline"></ion-icon> 2024 - Present
+              </h3>
+              <h1 class="credential__name">CMS Developer</h1>
+              <p class="credential__detail strike">Freelancer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" data-page="skills">
+        <div class="skills__details">
+          <h1 class="skills__title">Specialization</h1>
+          <p class="skills__info">My Experties</p>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Languages</h1>
+          <div class="skill__content">
+            <img src="images/bw/js.png" alt="" class="skill__item" />
+            <img src="images/bw/c-plus.png" alt="" class="skill__item" />
+            <img src="images/bw/c-sharp.png" alt="" class="skill__item" />
+          </div>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Frameworks</h1>
+          <div class="skill__content">
+            <img src="images/bw/sass.png" alt="" class="skill__item" />
+            <img src="images/bw/express.png" alt="" class="skill__item" />
+            <img src="images/bw/nodejs.png" alt="" class="skill__item" />
+            <img src="images/bw/React-icon.png" alt="" class="skill__item" />
+          </div>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Databases</h1>
+          <div class="skill__content">
+            <img src="images/bw/mongo-logo.png" alt="" class="skill__item" />
+            <img src="images/bw/mysql-logo.png" alt="" class="skill__item" />
+          </div>
+        </div>
+        <div class="skill">
+          <h1 class="skill__title">Graphics Design</h1>
+          <div class="skill__content">
+            <img src="images/bw/ai.png" alt="" class="skill__item" />
+            <img src="images/bw/ps.png" alt="" class="skill__item" />
+            <img src="images/bw/xd.png" alt="" class="skill__item" />
+            <img src="images/bw/id.png" alt="" class="skill__item" />
+            <img src="images/bw/figma.png" alt="" class="skill__item" />
+          </div>
+        </div>
+      </section>
+      <section class="portfolios" data-page="portfolios">
+        <div class="portfolios__details">
+          <h1 class="portfolios__title">Portfolios</h1>
+          <p class="portfolios__info">Showcase</p>
+        </div>
+        <div class="projects">
+          <ul class="filter__list">
+            <li class="filter__item">
+              <button data-filter-btn>All</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Static Sites</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Api Powered</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Full Stack</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>CMS Powered</button>
+            </li>
+            <li class="filter__item">
+              <button data-filter-btn>Graphics</button>
+            </li>
+          </ul>
+          <div class="filter__select-box">
+            <button class="filter__select">
+              <div class="filter__select--value">Select Category</div>
+              <div class="filter__select--icon">
+                <ion-icon name="chevron-down-outline"></ion-icon>
+              </div>
+            </button>
+            <ul class="select__list">
+              <li class="select__item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select__item">
+                <button data-select-item>Static Sites</button>
+              </li>
+              <li class="select__item">
+                <button data-select-item>Api Powered</button>
+              </li>
+              <li class="select__item">
+                <button data-select-item>Full Stack</button>
+              </li>
+              <li class="select__item">
+                <button data-select-item>CMS Powered</button>
+              </li>
+              <li class="select__item">
+                <button data-select-item>Graphics</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="projects__list has-scrollbar">
+            <li class="projects__item active" data-category="Static Sites">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Outdoors/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/outdoors.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Outdoors</h3>
+                <p class="project__category">Tour Advisor</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Static Sites">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Trillo/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/trillo.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Trillo</h3>
+                <p class="project__category">Hotel Management</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Static Sites">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Nexter/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/nexter.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Nexter</h3>
+                <p class="project__category">Real Estate</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Static Sites">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Omnifood/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/omnifood.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Omnifood</h3>
+                <p class="project__category">Food Delivery System</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Static Sites">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/anon.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Anon</h3>
+                <p class="project__category">Ecommerce Website</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Static Sites">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/tripxcite.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Tripxcite</h3>
+                <p class="project__category">Travel Website</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="CMS Powered">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/webflow-1.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">MovePlnr</h3>
+                <p class="project__category">CRM Solution</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="CMS Powered">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/webflow-2.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">The Grower</h3>
+                <p class="project__category">Marketing Platform</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Full Stack">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/wild-oasis.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">The Wild Oasis</h3>
+                <p class="project__category">Hotel Management</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Full Stack">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/notemaster.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Notemaster</h3>
+                <p class="project__category">Note Management App</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Api Powered">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/cineflex.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Cineflex</h3>
+                <p class="project__category">Movie Website</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Api Powered">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/forkify.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">Forkify</h3>
+                <p class="project__category">Fast Food</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Api Powered">
+              <div class="project">
+                <a href="https://therealzeemi.github.io/Anon/" target="_blank">
+                  <figure class="project__fig">
+                    <img src="images/fast-pizza.jpg" alt="" />
+                    <div class="project__iconbox">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                  </figure>
+                </a>
+                <h3 class="project__title">The Fast Pizza</h3>
+                <p class="project__category">Pizza Delivery</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/aspire.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Aspire To Inspire</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/redtelo.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">RedTelo</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/dame.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Dame Express</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/florida.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Florida Business</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/forms.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Online Intake Forms</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/home.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Home</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/logistics.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Priority Logistics</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/logle.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Logle</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+
+            <li class="projects__item active" data-category="Graphics">
+              <div class="project">
+                <figure class="project__fig">
+                  <img src="images/graphics/surveys.jpg" alt="" />
+                  <div class="project__iconbox">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                </figure>
+                <h3 class="project__title">Confidential Surveys</h3>
+                <p class="project__category">Logo Design</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about" data-page="about me">
+        <div class="about__details">
+          <h1 class="about__title">About me</h1>
+          <p class="about__info">Get to know me</p>
+        </div>
+        <div class="about__container">
+          <div class="about__left">
+            <img src="images/gallery.png" alt="" class="about__gallery" />
+          </div>
+          <div class="about__right">
+            <h3 class="about__tag">About me</h3>
+            <h1 class="about__heading">
+              Tech Enthusiast who loves to turn ideas into experiences through code.
+            </h1>
+            <p class="about__text">
+              <span
+                >I am Azeem, a seasoned web developer and designer specializing in the full stack
+                development with a rich background of 5 years in the field. With a passion for
+                crafting seamless digital experiences, I provide a unique blend of technical
+                expertise and creative flair to every project.</span
+              >
+              <!-- <span
+                >Beyond the world of coding, I find joy in exploring the realms of automobiles,
+                demonstrating an unparalleled fascination with cars. This love extends to a genuine
+                enthusiasm for PC gaming and cinematic adventures.</span
+              ><span>
+                Dedication is my forte, not only in the realm of technology but also in the pursuit
+                of a healthy lifestyle. Regular gym sessions serve as a testament to my commitment
+                to personal growth and well-being.</span
+              > -->
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
