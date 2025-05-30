@@ -1,0 +1,114 @@
+:root {
+  --color-light-1: #fafafa;
+  --color-light-2: #e2e2e2;
+  --color-light-3: #c4c4c4;
+
+  --color-dark-1: #121212;
+  --color-dark-2: #1e1e1f;
+  --color-dark-3: #272727;
+  --color-dark-4: #3f3f40;
+
+  --color-secondary-1: #4dcfff;
+}
+
+.dark-mode {
+  // --color-light-1: #fafafa;
+  --color-light-1: #121212;
+  // --color-light-2: #fafafab7;
+  --color-light-2: #1e1e1f;
+
+  // --color-dark-1: #121212;
+  --color-dark-1: #fafafa;
+  // --color-dark-2: #1e1e1f;
+  --color-dark-2: #e6e6e7;
+  // --color-dark-3: #272727;
+  --color-dark-3: #c4c4c4;
+
+  --color-dark-4: #3f3f40;
+
+  // --color-secondary-1: #4dcfff;
+  --color-secondary-1: #0c90c0;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 45%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 35%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif !important;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: var(--color-dark-1);
+  color: var(--color-light-1);
+  transition: all 0.2s;
+}
+
+main {
+  padding: 0 5rem;
+}
+
+main section {
+  display: none;
+  max-width: 120rem;
+  padding: 5rem;
+  margin: 0 auto 7rem;
+  border-radius: 2.5rem;
+  background-color: var(--color-dark-2);
+
+  @media only screen and (max-width: $bp-large) {
+    max-width: 90%;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    max-width: 95%;
+  }
+}
+
+section.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+nav.active {
+  display: block;
+  transform: translateX(0);
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: white; /* Yellow color for track */
+  border-radius: 20px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 55%);
+  border-radius: 20px;
+  border: 10px solid transparent;
+}

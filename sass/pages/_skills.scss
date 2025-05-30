@@ -1,0 +1,97 @@
+.skills {
+  width: 120rem;
+  margin: 0 auto 7rem;
+  padding: 5rem 5rem;
+  border-radius: 2.5rem;
+  background-color: var(--color-dark-2);
+
+  &__details {
+    display: inline-block;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    color: var(--color-secondary-1);
+  }
+
+  &__info {
+    display: inline-block;
+    color: var(--color-light-2);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-light-2);
+  }
+
+  .skill {
+    text-align: center;
+    margin-bottom: 7rem;
+
+    &__title {
+      color: var(--color-light-1);
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 1px solid currentColor;
+      line-height: 1;
+      padding: 0.5rem 0;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 5rem;
+      transition: all 0.1s;
+
+      &:hover {
+        color: var(--color-secondary-1);
+      }
+    }
+
+    &__content {
+      margin: auto;
+      width: min-content;
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        gap: 3rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        gap: 2rem;
+      }
+    }
+
+    &__item {
+      display: block;
+      height: 5rem;
+      filter: brightness(0) saturate(100%) invert(91%) sepia(3%) saturate(23%) hue-rotate(343deg)
+        brightness(87%) contrast(90%);
+      opacity: 0.5;
+      transition: all 0.1s;
+
+      @media only screen and (max-width: $bp-medium) {
+        height: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        height: 3rem;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.dark-mode .skill__item {
+  opacity: 0.4;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(7%) saturate(133%) hue-rotate(202deg)
+    brightness(99%) contrast(96%);
+
+  &:hover {
+    opacity: 1;
+    filter: brightness(0) saturate(100%);
+  }
+}
